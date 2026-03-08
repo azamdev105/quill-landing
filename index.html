@@ -10,12 +10,85 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
 
 <body>
-
+    <div class="sidebar">
+        <i id="close" class="ri-close-large-fill"></i>
+        <a href="#features">Features</a>
+        <a href="#how">How it Works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#">Log in</a>
+        <a href="#" class="btn btn--primary">Get Started</a>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="#home">Quill.</a>
+                </div>
+                <div class="nav__links">
+                    <a class="hideOnMobile" href="#features">Features</a>
+                    <a class="hideOnMobile" href="#how">How it Works</a>
+                    <a class="hideOnMobile" href="#testimonials">Testimonials</a>
+                    <a class="hideOnMobile" href="#pricing">Pricing</a>
+                </div>
+                <div class="nav__cta">
+                    <a class="hideOnMobile btn btn--ghost" href="#">Log in</a>
+                    <a class="btn btn--primary" href="#">Get Started</a>
+                    <i id="menu" class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__content">
+                        <div class="hero__badge">
+                            <i class="ri-sparkling-line"></i>
+                            <span>AI-Powered Writing</span>
+                        </div>
+                        <h1 class="hero__heading">Write Less.<br><span class="text-brand">Say More.</span></h1>
+                        <p class="hero__subtext">Quill helps you write faster, clearer, and smarter. From emails to
+                            essays — your AI writing partner that actually understands context.</p>
+                        <div class="hero__cta">
+                            <a href="#" class="btn btn--primary">Start for Free</a>
+                            <a href="#" class="btn btn--outline">See How it Works</a>
+                        </div>
+                    </div>
+                    <div class="hero__mockup">
+                        <img src="./images/quill.png" alt="Quill App">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logos-section">
+            <div class="container">
+                <div class="logos">
+                    <p class="logos__label">Trusted by teams at</p>
+                    <div class="logos__grid">
+                        <span class="logo-name">Veltro</span>
+                        <span class="logo-name">Nimbux</span>
+                        <span class="logo-name">Pageon</span>
+                        <span class="logo-name">Zentric</span>
+                        <span class="logo-name">Orbitly</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features-section" id="features"></section>
+        <section class="how-section" id="how"></section>
+        <section class="testimonials-section"></section>
+        <section class="pricing-section" id="pricing"></section>
+        <section class="cta-section"></section>
+    </main>
+    <footer class="footer"></footer>
 </body>
 
 </html>
