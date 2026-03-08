@@ -623,6 +623,312 @@ html {
     flex-shrink: 0;
 }
 
+/* How Section */
+.testimonials-section {
+    padding-block: var(--space-24);
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-16);
+}
+
+.testimonials__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: center;
+    max-width: 600px;
+}
+
+.testimonials__title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    color: var(--text-primary);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--letter-tight);
+}
+
+.testimonials__subtitle {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    width: 100%;
+}
+
+.testimonial-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-8);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.testimonial-card:hover {
+    border-color: rgba(124, 58, 237, 0.4);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+}
+
+.testimonial-card__quote {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    font-style: italic;
+}
+
+.testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.testimonial-card__author img {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+}
+
+.testimonial-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.testimonial-card__name {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    color: var(--text-primary);
+}
+
+.testimonial-card__role {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding-block: var(--space-24);
+    background-color: var(--bg-surface);
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-16);
+}
+
+.pricing__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: center;
+    max-width: 600px;
+}
+
+.pricing__title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    color: var(--text-primary);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--letter-tight);
+}
+
+.pricing__subtitle {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    width: 100%;
+    align-items: start;
+}
+
+.pricing-card {
+    background-color: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    position: relative;
+}
+
+.pricing-card--featured {
+    background: linear-gradient(135deg, #160822, #1e0f2e);
+    border-color: var(--brand);
+    box-shadow: var(--shadow-glow);
+    transform: scale(1.05);
+}
+
+.pricing-card__badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--brand);
+    color: #ffffff;
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-wide);
+    text-transform: uppercase;
+    padding: var(--space-1) var(--space-4);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+}
+
+.pricing-card__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.pricing-card__plan {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: var(--weight-bold);
+    color: var(--text-primary);
+    letter-spacing: var(--letter-wide);
+    text-transform: uppercase;
+}
+
+.pricing-card__price {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-1);
+}
+
+.pricing-card__amount {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-black);
+    color: var(--text-primary);
+    letter-spacing: var(--letter-tight);
+}
+
+.pricing-card--featured .pricing-card__amount {
+    color: var(--brand-light);
+}
+
+.pricing-card__period {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--text-tertiary);
+}
+
+.pricing-card__desc {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+.pricing-card__features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    list-style: none;
+}
+
+.pricing-card__features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.pricing-card__features li i {
+    color: var(--brand-light);
+    font-size: var(--text-base);
+    flex-shrink: 0;
+}
+
+.pricing-card__features li.disabled {
+    opacity: 0.4;
+}
+
+.pricing-card__features li.disabled i {
+    color: var(--text-tertiary);
+}
+
+.btn--full {
+    width: 100%;
+    text-align: center;
+}
+
+.btn--outline {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    border: 1px solid var(--border);
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    font-family: var(--font-body);
+}
+
+.btn--outline:hover {
+    border-color: var(--brand-light);
+    color: var(--brand-light);
+}
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
