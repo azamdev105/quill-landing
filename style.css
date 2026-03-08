@@ -1,0 +1,76 @@
+:root {
+  --text-xs:   clamp(0.6875rem, 1.5vw, 0.75rem);
+  --text-sm:   clamp(0.8125rem, 1.8vw, 0.875rem);
+  --text-base: clamp(0.9375rem, 2vw, 1rem);
+  --text-lg:   clamp(1.125rem, 2.5vw, 1.25rem);
+  --text-xl:   clamp(1.25rem, 3vw, 1.5625rem);
+  --text-2xl:  clamp(1.5rem, 3.5vw, 1.9375rem);
+  --text-3xl:  clamp(1.75rem, 4.5vw, 2.4375rem);
+  --text-4xl:  clamp(2rem, 5.5vw, 3.0625rem);
+  --text-5xl:  clamp(2.25rem, 6.5vw, 3.8125rem);
+
+--font-display: 'Plus Jakarta Sans', sans-serif;
+--font-body: 'Inter', sans-serif;
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    800;
+
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.6;
+
+  --letter-tight:  -0.03em;
+  --letter-snug:   -0.02em;
+  --letter-normal:  0em;
+  --letter-wide:    0.08em;
+  --letter-wider:   0.12em;
+
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-25: 10rem;
+
+  --brand:      #7c3aed;
+  --brand-dim:  #6d28d9;
+  --brand-glow: rgba(124, 58, 237, 0.15);
+  --brand-light: #a78bfa;
+
+  --bg-page:    #0a0010;
+  --bg-surface: #0f0518;
+  --bg-raised:  #160822;
+
+  --neutral-800: #1e0f2e;
+  --neutral-700: #2a1640;
+  --neutral-500: #4a3060;
+  --neutral-400: #7a5f94;
+  --neutral-200: #b39dcc;
+  --neutral-50:  #ede8f5;
+
+  --text-primary:   #ede8f5;
+  --text-secondary: #b39dcc;
+  --text-tertiary:  #7a5f94;
+
+  --border:       #1e0f2e;
+  --border-light: rgba(255, 255, 255, 0.06);
+
+  --radius-sm:   0.375rem;
+  --radius-md:   0.75rem;
+  --radius-lg:   1rem;
+  --radius-full: 9999px;
+
+  --shadow-sm:   0 0.125rem 0.5rem rgba(0, 0, 0, 0.4);
+  --shadow-md:   0 0.25rem 1.5rem rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 2.5rem rgba(124, 58, 237, 0.2);
+}
