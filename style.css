@@ -976,8 +976,103 @@ html {
     gap: var(--space-4);
 }
 
+/* Footer */
+.footer {
+    background-color: var(--bg-surface);
+    border-top: 1px solid var(--border-light);
+    padding-block: var(--space-16);
+}
 
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-12);
+    padding-bottom: var(--space-12);
+    border-bottom: 1px solid var(--border-light);
+}
 
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-width: 200px;
+}
+
+.footer__logo {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-black);
+    color: var(--brand-light);
+    letter-spacing: var(--letter-tight);
+}
+
+.footer__tagline {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    line-height: var(--leading-relaxed);
+}
+
+.footer__links {
+    display: flex;
+    gap: var(--space-16);
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.footer__col-title {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-bold);
+    color: var(--text-primary);
+    letter-spacing: var(--letter-wide);
+    text-transform: uppercase;
+    margin-bottom: var(--space-2);
+}
+
+.footer__col a {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    transition: color 0.2s ease;
+}
+
+.footer__col a:hover {
+    color: var(--brand-light);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-8);
+}
+
+.footer__copyright {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+}
+
+.footer__social {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.footer__social a {
+    color: var(--text-tertiary);
+    font-size: var(--text-lg);
+    transition: color 0.2s ease;
+}
+
+.footer__social a:hover {
+    color: var(--brand-light);
+}
 
 
 
