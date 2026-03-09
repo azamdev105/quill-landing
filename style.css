@@ -1116,27 +1116,69 @@ html {
 
 
 /* Media Queries */
+/* Media Queries */
+@media(max-width: 1024px) {
+    .hero-section { padding-top: var(--space-16); }
+    .features__grid { grid-template-columns: repeat(2, 1fr); }
+    .how__steps { gap: var(--space-8); }
+    .footer__links { gap: var(--space-8); }
+}
+
 @media(max-width: 900px) {
-      .hideOnMobile {
-        display: none;
-    }
-    #menu {
-        display: block;
-    }
-    .sidebar {
-        width: clamp(240px, 45vw, 280px);
-    }
+    .hideOnMobile { display: none; }
+    #menu { display: block; }
+
     .nav__links {
-        padding: 1rem;
-        background: none;
-        border: none;
-        box-shadow: none;
-    }
-    .nav__links i {
-        font-size: 2rem;
+        position: static;
+        transform: none;
     }
 }
-@media(max-width: 400px) {
+
+@media(max-width: 800px) {
+    .container {
+        padding-left: var(--space-6);
+        padding-right: var(--space-6);
+    }
+
+    .hero-section { padding-top: var(--space-12); padding-bottom: var(--space-12); }
+    .hero__heading { font-size: var(--text-4xl); }
+    .hero__subtext { font-size: var(--text-base); }
+
+    .features__grid { grid-template-columns: 1fr; }
+
+    .how__steps { flex-direction: column; align-items: flex-start; }
+    .how__divider { width: 100%; height: 1px; }
+
+    .testimonials__grid { grid-template-columns: 1fr; }
+
+    .pricing__grid { grid-template-columns: 1fr; }
+    .pricing-card--featured { transform: scale(1); }
+
+    .cta { padding: var(--space-16) var(--space-8); }
+    .cta__title { font-size: var(--text-3xl); }
+    .cta__buttons { flex-direction: column; align-items: center; }
+
+    .footer__top { flex-direction: column; gap: var(--space-8); }
+    .footer__links { gap: var(--space-8); }
+
+    .how__title,
+    .features__title,
+    .testimonials__title,
+    .pricing__title { font-size: var(--text-3xl); }
+}
+
+@media(max-width: 480px) {
+    .hero__heading { font-size: var(--text-3xl); }
+    .hero__cta { flex-direction: column; align-items: center; }
+
+    .logos__grid { gap: var(--space-6); }
+    .logo-name { font-size: var(--text-base); }
+
+    .footer__links { flex-direction: column; gap: var(--space-6); }
+    .footer__bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
+
+    .cta__title { font-size: var(--text-2xl); }
+
     .btn--primary {
         font-size: var(--text-xs);
         padding: var(--space-1) var(--space-3);
