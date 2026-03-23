@@ -5,7 +5,7 @@ Designed to demonstrate real-world frontend skills including responsive
 design, CSS animations, and clean component structure.
 
 ## Live Demo
-[View Live](https://your-netlify-link.netlify.app)
+[View Live](https://quill-landing.netlify.app/)
 
 ## Built With
 - HTML5
@@ -21,4 +21,4 @@ design, CSS animations, and clean component structure.
 
 ## Author
 Azam — Frontend Developer
-[Portfolio](https://your-portfolio-link.netlify.app)
+[Portfolio](https://azam-dev.netlify.app/)
